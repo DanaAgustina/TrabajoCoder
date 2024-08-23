@@ -1,0 +1,356 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url(../Font/Poppins/Poppins-Light.ttf);
+}
+body {
+  background-color: rgba(225, 176, 231, 0.5411764706);
+  font-family: "Poppins-Light";
+}
+body .background-video {
+  width: 100w;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.header {
+  background: radial-gradient(circle, #f6d5fb, #efbaf6, #f2b9fa);
+}
+.header .navbar {
+  list-style-type: none;
+  margin-top: 5px;
+}
+.header .navbar .container-fluid .navbar-brand .logo {
+  width: 100px;
+  margin-top: 20px;
+  padding: 5px;
+  border: solid 3px rgba(229, 142, 240, 0.7411764706);
+  margin: 10px;
+}
+.header .navbar .container-fluid .navbar-brand .logo:hover {
+  transform: scale(1.1, 1.1);
+  padding: 0;
+  border: solid 3px #f997e2;
+}
+.header .navbar .container-fluid .navbar-brand h1 {
+  color: #000000;
+  text-align: center;
+  font-size: 2.8rem;
+  margin-top: 20px;
+  font-family: bold;
+}
+.header .navbar .collapse ul li {
+  margin: 5px;
+  display: inline-block;
+  text-align: center;
+}
+.header .navbar .collapse ul li a {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: rgba(229, 142, 240, 0.7411764706) 2px solid;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 10px;
+}
+.header .navbar .collapse ul li a:hover {
+  color: white;
+  border: #d541a8 2px solid;
+  background: linear-gradient(to top, #d541a8, rgba(229, 142, 240, 0.7411764706), #f997e2, #efbaf6, white);
+}
+
+main div h2 {
+  background-color: rgba(239, 205, 248, 0.2117647059);
+  color: rgba(229, 142, 240, 0.7411764706);
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+main div h4 {
+  background-color: rgba(239, 205, 248, 0.2117647059);
+  color: #000000;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+main div .texto-inicio {
+  background-color: rgba(239, 205, 248, 0.2117647059);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 20px;
+  margin: 20px;
+}
+
+main section h2 {
+  color: rgba(229, 142, 240, 0.7411764706);
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+main section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main .maps {
+  text-align: center;
+  justify-content: center;
+}
+main .maps h2 {
+  color: rgba(229, 142, 240, 0.7411764706);
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+main .maps .map-container {
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+}
+main .maps .map-container .map {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+main .maps .map-container .map:hover {
+  transform: scale(1.2);
+}
+main .maps .ubicacion h2 {
+  color: rgba(229, 142, 240, 0.7411764706);
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+main .maps .ubicacion p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+main div section h2 {
+  color: rgba(229, 142, 240, 0.7411764706);
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+main div section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 10px;
+  margin: 20px;
+}
+main .perro h2 {
+  color: rgba(229, 142, 240, 0.7411764706);
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+main .perro .nombre-galgos {
+  position: center;
+  color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2rem;
+  background-color: #f997e2;
+  margin-left: 480px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+main .perro .contenedor {
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+main .perro .contenedor img {
+  float: left;
+  width: 200px;
+  margin-bottom: 50px;
+  border: double 5px #f997e2;
+  padding: 10px;
+}
+main .perro .contenedor img:hover {
+  border: solid 8px #d541a8;
+  padding: 0;
+}
+main .perro .contenedor p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 10px;
+  margin: 20px;
+  flex: 1;
+  margin-bottom: 50px;
+}
+main .section-4 .textoform {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+main .section-4 .row .col-13 .btn {
+  background-color: rgba(218, 144, 228, 0.8588235294);
+  border: #f49eff 2px solid;
+  color: #000000;
+}
+main .section-4 .row .col-13 .btn:hover {
+  color: white;
+  border: #d541a8 2px solid;
+  background-color: #f997e2;
+}
+main .section-4 .col-12 .btn {
+  background-color: rgba(218, 144, 228, 0.8588235294);
+  border: #f49eff 2px solid;
+  color: #000000;
+  margin: 10px;
+  margin-left: 60px;
+}
+main .section-4 .col-12 .btn:hover {
+  color: white;
+  border: #d541a8 2px solid;
+  background-color: #f997e2;
+}
+
+main h4 {
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+}
+main h2 {
+  color: rgba(229, 142, 240, 0.7411764706);
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+main .carrusel {
+  text-align: center;
+  justify-content: center;
+}
+main .carrusel div .carousel-inner .carousel-item img {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+}
+main h2 {
+  color: rgba(229, 142, 240, 0.7411764706);
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+main div {
+  margin: 40px;
+}
+main div .coment {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 20px;
+}
+main .col-12 .btn {
+  background-color: rgba(218, 144, 228, 0.8588235294);
+  border: #f49eff 2px solid;
+  color: #000000;
+  margin: 10px;
+  margin-left: 30px;
+}
+main .col-12 .btn:hover {
+  color: white;
+  border: #d541a8 2px solid;
+  background-color: #f997e2;
+}
+main p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 30px;
+}
+
+main section h2 {
+  color: rgba(229, 142, 240, 0.7411764706);
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+main section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 10px;
+  margin: 20px;
+}
+main .cbu p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  padding: 30px;
+}
+
+footer {
+  padding: 5px;
+  margin-top: 10px;
+  background: radial-gradient(circle, #f6d5fb, #efbaf6, #f2b9fa);
+  text-align: center;
+}
+footer .footer-text h6 {
+  display: inline-block;
+  color: #000000;
+  padding: 10px;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=estilo.css.map */

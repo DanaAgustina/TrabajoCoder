@@ -1,0 +1,24 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+ }
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../Font/Poppins/Poppins-Light.ttf);
+}   
+body{
+   background-color: $bg-claro;
+    font-family:"Poppins-Light";
+    .background-video{
+      width: 100w;
+      height: 100vh;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+} 

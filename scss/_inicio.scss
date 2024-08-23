@@ -1,0 +1,35 @@
+
+main{
+    div{
+        h2{
+            background-color: $bg-transparente;
+            color:$bg-rosa;
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-left: 350px;
+            margin-right: 350px; 
+        }
+        h4{
+            background-color: $bg-transparente;
+            color: $bg-negro;
+            margin-left: 200px;
+            margin-right: 200px;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.5rem;
+            padding: 30px;
+            
+        }
+        .texto-inicio{
+            background-color: $bg-transparente;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            padding: 20px;
+            margin: 20px;
+        }
+
+    }
+}

@@ -1,0 +1,18 @@
+footer{
+      padding: 5px;
+      margin-top: 10px;
+      background: radial-gradient(circle, $bg-blanquito , $bg-medioclaro, $bg-clarito );
+      text-align: center;
+    .footer-text{      
+        h6{
+            display: inline-block;
+            color: $bg-negro;
+            padding: 10px;            
+            margin-top: 10px;
+            padding-bottom: 15px;
+            font-size: 1rem;            
+            text-decoration: none;
+
+        }
+    }
+}

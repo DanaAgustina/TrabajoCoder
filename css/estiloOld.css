@@ -1,0 +1,279 @@
+/*CSS en general*/
+*{
+   padding:0;
+   margin:0;
+}
+@font-face {
+   font-family: Poppins-Light;
+   src: url(../Font/Poppins/Poppins-Light.ttf);
+}   
+body{
+  background-color: #e1b0e78a;
+   font-family:"Poppins-Light";
+   .background-video{
+     width: 100w;
+     height: 100vh;
+     object-fit: cover;
+     position: fixed;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     z-index: -1;
+   }
+   }  
+p{
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 10px;
+  margin: 20px;
+}  
+
+header{
+  background-color: #efbaf6;
+  position: sticky;
+  top: 0;
+  z-index: 1; 
+} 
+h1{color: #000000;
+  text-align: center;
+  font-size: 2.8rem;
+  margin-top: 20px;
+  font-family: bold;   
+}
+h2{
+  color:#e58ef0bd;
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold; 
+}
+h3{
+  padding-top: 10px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black ;
+  background-color: #e58ef04d;
+  font-style: oblique;
+}
+h4{
+   color: black;
+   padding: 10px;
+   text-align: center;
+   margin-top: 10px;
+   font-size: 1rem;
+}
+h6{
+  color: black;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  font-size: 1rem;
+  display: inline-block;
+  text-decoration: none;
+}
+header img{
+  width: 100px;
+  margin-top:20px;
+  padding: 5px;
+  border: solid 3px #f49eff;
+  margin: 10px;
+}
+header nav ul{
+   list-style-type: none;
+   margin-top: 5px; 
+}
+header nav ul li{
+   margin: 5px;
+   display: inline-block;
+   text-align: center;   
+}
+header nav ul li a{
+   color:black;
+   font-size: 1rem;
+   font-weight: bold;
+   text-decoration: none;
+   border: #f49eff 2px solid;
+   padding: 5px;
+   text-align:center;
+   display: inline-block;
+   margin-left: 10px;
+}
+header nav ul li a:hover{
+  color:white; 
+  border:#ff00b3 2px solid;
+  background-color: #f997e2;
+}
+/*.contain{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "header header "
+  "main main "
+  "main main"
+  "footer footer "
+  ;
+}
+.header{
+  grid-area: header;
+}
+.main{
+  grid-area: main;
+}
+.footer{
+  grid-area: footer;
+}*/
+
+/*CSS inicio*/
+.titulo-inicio{
+  background-color: #efcdf836;
+}
+.texto-inicio{
+  background-color: #efcdf836;
+}
+.headerinicio{
+  background-color: #faebd711;
+}
+footer{
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #efbaf6;
+}
+
+/*CSS adopciones*/
+.contenedor{
+  width: 85%; /* Ancho del contenedor principal */
+   margin: 0 auto; /* Centrar el contenedor */
+   overflow: hidden; /* Limpiar el float */
+
+   /* Estilos para las columnas */
+   display: flex; /* flexbox para alinear los elementos */
+   align-items: center; /* Alinear verticalmente los elementos */
+   margin-top: 20px;
+   padding-bottom: 20px;
+}
+img{
+   float: left; /* Alinear la imagen a la izquierda */
+   margin-right: 5px; /* Margen a la derecha de la imagen */
+   width: 200px; /* Ancho deseado para la imagen */
+}
+p {
+   flex: 1; /* El párrafo ocupa todo el espacio restante */
+}
+.contenedor img{
+  border-radius: 20px;
+}
+form{
+  margin-left: 15px;
+}
+.nombre-galgos{
+  position:center; 
+  color:#ffffff; 
+  left:50%;   
+  transform: translate((-50%, -50%));
+  text-align: center;  
+  font-size: 2rem;   
+  background-color:#f997e2;
+}
+.textoform{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.row{ margin: 20px;
+}
+.btn{ background-color: #da90e4db;
+  border: #f49eff 2px solid;
+  color: #000000;
+}
+.btn:hover{
+  color:#ffffff; 
+  border:#ff00b3 2px solid;
+  background-color: #f997e2;
+}
+.col-12{ margin: 20px;
+}
+/*CSS donde estamos*/
+iframe{
+  text-align: center;
+  margin-left: 350px;
+}
+
+/*productos*/
+.contencion{
+  width: 100%; 
+   margin: 0 auto; 
+   overflow: hidden; 
+   align-items: center; 
+   margin-top: 20px;
+   padding-bottom: 20px;
+}
+.contencion img{
+margin: 0 auto;
+max-width: 100%;
+height: auto;
+text-align: center;
+justify-content: center;
+}
+.boton{
+  display: inline-block;
+  margin-left: 30px;
+} 
+.mb-3{
+  margin: 20px;
+}
+.carrusel{
+  text-align: center;
+  justify-content: center;
+  
+}
+/*CSS donaciones*/
+.cbu{
+  text-align: center;
+  padding: 30px;
+}
+.terminos{
+  text-align: left;
+  font-size: 15px;
+  padding: 0.5px;
+}
+
+@media screen and(max-width:1400px) {
+  main{
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and(max-width:1200px) {
+  main{
+      display: grid;
+      grid-template-rows: 2fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and(max-width:992px) {
+  main{
+      display: grid;
+      grid-template-rows: 3fr;
+      grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and(max-width:768px) {
+  main{
+      display: grid;
+      grid-template-rows: 4fr;
+      grid-template-columns: 1fr;
+  }
+}
+@media screen and(max-width:576px) {
+  main{
+      display: grid;
+      grid-template-rows: 5fr;
+      grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,55 @@
+.header{
+    background: radial-gradient(circle, $bg-blanquito , $bg-medioclaro, $bg-clarito );
+    .navbar{
+        list-style-type: none;
+        margin-top: 5px;
+        .container-fluid{
+            .navbar-brand{
+                .logo{
+                  width: 100px;
+                  margin-top:20px;
+                  padding: 5px;
+                  border: solid 3px $bg-rosa;
+                  margin: 10px;
+                  &:hover{
+                    transform: scale(1.1, 1.1);
+                    padding: 0;
+                    border: solid 3px $bg-rosita;
+                  }
+                }
+                h1{
+                  color: $bg-negro;
+                  text-align: center;
+                  font-size: 2.8rem;
+                  margin-top: 20px;
+                  font-family: bold; 
+                }
+            }
+        }
+        .collapse{
+            ul{
+                li{
+                  margin: 5px;
+                  display: inline-block;
+                  text-align: center;
+                  a{
+                     color:$bg-negro;
+                     font-size: 1rem;
+                     font-weight: bold;
+                     text-decoration: none;
+                     border: $bg-rosa 2px solid;
+                     padding: 5px;
+                     text-align:center;
+                     display: inline-block;
+                     margin-left: 10px; 
+                     &:hover{
+                         color:$bg-blanco; 
+                         border:$bg-fucsia 2px  solid;
+                         background: linear-gradient( to top,$bg-fucsia , $bg-rosa, $bg-rosita, $bg-medioclaro, $bg-blanco ) ;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}

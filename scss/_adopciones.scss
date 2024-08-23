@@ -1,0 +1,138 @@
+main{
+    div{
+        section{
+            h2{
+                color:$bg-rosa;
+                text-align: center;
+                margin-top: 40px;
+                padding-bottom: 30px;
+                font-size: 2rem;
+                font-weight: bold; 
+            }
+            p{
+                font-size: 1.2rem;
+                line-height: 1.5;
+                padding: 10px;
+                margin: 20px;
+            }
+        }
+    }
+    .perro{
+        h2{
+            color:$bg-rosa;
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 30px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .nombre-galgos{
+            position:center; 
+            color:$bg-blanco; 
+            left:50%;   
+            transform: translate((-50%, -50%));
+            text-align: center;  
+            font-size: 2rem;   
+            background-color:$bg-rosita;
+            margin-left: 480px;
+            margin-bottom: 20px;
+            margin-top:30px
+        }
+        .contenedor{
+            width: 85%; 
+            margin: 0 auto; 
+            overflow: hidden; 
+            display: flex; 
+            align-items: center; 
+            margin-top: 20px;
+            padding-bottom: 20px;
+            img{
+                float: left; 
+                width: 200px;
+                margin-bottom: 50px;
+                border: double 5px $bg-rosita;
+                padding: 10px;
+                &:hover{
+                    border: solid 8px $bg-fucsia;
+                    padding: 0;
+                }
+            }
+            p{
+                font-size: 1.2rem;
+                line-height: 1.5;
+                padding: 10px;
+                margin: 20px;
+                flex: 1;  
+                margin-bottom: 50px;
+            }
+        }  
+    }      
+    .section-4{
+        .textoform{
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+
+        }
+        .row{
+            .col-md-4{
+                .form-label{
+    
+                }
+            }
+            .col-md-6{
+                .form-label{
+    
+                }
+            }
+            .col-md-3{
+                .form-label{
+    
+                }
+            }
+            .col-12{
+                .form-check-input{
+    
+                }
+                .form-check-label{
+    
+                }
+            }
+            .col-13{
+                .btn{
+                    background-color: $bg-boton;
+                    border: $bg-borde 2px solid;
+                    color: $bg-negro;
+                    &:hover{
+                        color:$bg-blanco; 
+                        border:$bg-fucsia 2px solid;
+                        background-color: $bg-rosita;
+                    }
+                }
+            }
+                    
+        }
+        .textoform{
+        }
+        .form{
+             div{
+                
+            }          
+        }
+        .col-12{
+            .btn{
+                background-color: $bg-boton;
+                border: $bg-borde 2px solid;
+                color: $bg-negro; 
+                margin: 10px;
+                margin-left: 60px;      
+                &:hover{
+                    color:$bg-blanco; 
+                    border:$bg-fucsia 2px solid;
+                    background-color: $bg-rosita;
+                }
+            }
+        }
+    }    
+}
+
