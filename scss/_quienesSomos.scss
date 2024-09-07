@@ -19,7 +19,7 @@ main{
             text-align: center;
         }
     } 
-    .rescate {
+    .transito {
         display: flex;
         margin: 30px;
         text-align: center;
@@ -35,14 +35,16 @@ main{
                 font-weight: bold;
             }
             .rastreo {
-                margin-left: 20px;
-                flex-shrink: 0; 
+                flex-shrink: 0;
+                text-align: center;
+                justify-content: center; 
                 p {
                     height: auto; 
                     display: block;
                     margin-left: 20px;
                     border: solid 5px $bg-rosa;
                     padding: 20px;
+                    
                 }
             }
         }
