@@ -1,31 +1,94 @@
 main{
     section{
         h2{
-            color:$bg-rosa;
+            color:$bg-fucsia;
             text-align: center;
             margin-top: 40px;
             padding-bottom: 30px;
-            font-size: 2rem;
+            font-size: 4rem;
             font-weight: bold; 
 
         }
         p{
-            font-size: 1.2rem;
-            line-height: 1.5;
+            font-size: 2rem;
+            line-height: 1.7;
+            padding: 10px;
+            margin: 5px;
+            font-weight: bold;
+            text-align: center;
+
+        }
+        p{
+            font-size: 2rem;
+            line-height: 1.7;
             padding: 10px;
             margin: 20px;
+            font-weight: bold;
 
         }
     }
+    .mp{
+        display: flex;
+        gap: 1rem; 
+        justify-content: center; 
+        flex-wrap: wrap; 
+        margin: 40px;
+        .card{
+            flex: 1 1 14rem;
+            gap: 1rem; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            margin: 40px;
+            &:hover{
+                border: solid $bg-fucsia;
+                padding: 0; 
+            }
+            .card-img-top{
+                padding: 5px;
+            }
+            .card-body{  
+                .card-title{
+                    text-align: center;
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    color: $bg-rosa;
+                }
+                .card-text{
+                    text-align: justify;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    padding: 0;
+                }
+                .btn{
+                  background-color: $bg-boton;
+                  border: $bg-borde 2px solid;
+                  color: $bg-negro; 
+                  margin: 10px;
+                  margin-left: 20px;
+                  width: 100px; 
+                  font-size: 1.5rem; 
+                  &:hover{
+                      color:$bg-blanco; 
+                      border:$bg-fucsia 2px solid;
+                      background-color: $bg-rosita;
+                      font-weight: bold;
+                      font-size: 1.7rem; 
+                    }
+                }
+            }        
+        }
+        
+    }
     .cbu{
         p{
-            font-size: 1.2rem;
+            font-size: 2rem;
             line-height: 1.5;
             padding: 10px;
             margin: 20px;
             text-align: center;
             padding: 30px;
+            font-weight: bold;
         }
 
     }
-}
+}    

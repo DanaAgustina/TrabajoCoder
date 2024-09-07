@@ -5,15 +5,15 @@
 }
 
 @font-face {
-  font-family: Poppins-Light;
-  src: url(../Font/Poppins/Poppins-Light.ttf);
+  font-family: AmaticSC-Regular;
+  src: url(../Font/Amatic_SC/AmaticSC-Regular.ttf);
 }
 body {
   background-color: rgba(225, 176, 231, 0.5411764706);
-  font-family: "Poppins-Light";
+  font-family: "AmaticSC-Regular";
 }
 body .background-video {
-  width: 100w;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
   position: fixed;
@@ -25,163 +25,477 @@ body .background-video {
 }
 
 .header {
-  background: radial-gradient(circle, #f6d5fb, #efbaf6, #f2b9fa);
+  background: radial-gradient(circle, #f6d5fb, #efbaf6, #f997e2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1;
+  transition: background-color rgba(239, 205, 248, 0.2117647059) 0.3s;
+  margin: 0;
+}
+.header.transparent {
+  background-color: rgba(239, 205, 248, 0.2117647059);
 }
 .header .navbar {
   list-style-type: none;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 .header .navbar .container-fluid .navbar-brand .logo {
-  width: 100px;
+  width: 80px;
   margin-top: 20px;
   padding: 5px;
-  border: solid 3px rgba(229, 142, 240, 0.7411764706);
-  margin: 10px;
+  border: double 3px #d541a8;
+  margin: 5px;
 }
 .header .navbar .container-fluid .navbar-brand .logo:hover {
   transform: scale(1.1, 1.1);
   padding: 0;
-  border: solid 3px #f997e2;
+  border: solid 3px #d541a8;
 }
-.header .navbar .container-fluid .navbar-brand h1 {
+.header .navbar .container-fluid h1 {
   color: #000000;
   text-align: center;
-  font-size: 2.8rem;
-  margin-top: 20px;
-  font-family: bold;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.header .navbar .collapse {
+  text-align: right;
+  justify-content: right;
+}
+.header .navbar .collapse ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 .header .navbar .collapse ul li {
-  margin: 5px;
+  margin: 0 10px;
   display: inline-block;
   text-align: center;
 }
 .header .navbar .collapse ul li a {
   color: #000000;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.8rem;
   text-decoration: none;
-  border: rgba(229, 142, 240, 0.7411764706) 2px solid;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .header .navbar .collapse ul li a:hover {
-  color: white;
-  border: #d541a8 2px solid;
-  background: linear-gradient(to top, #d541a8, rgba(229, 142, 240, 0.7411764706), #f997e2, #efbaf6, white);
+  color: #d541a8;
+  transform: scale(1.3);
+  font-weight: bold;
 }
 
+main {
+  margin-top: 180px;
+}
 main div h2 {
-  background-color: rgba(239, 205, 248, 0.2117647059);
-  color: rgba(229, 142, 240, 0.7411764706);
+  color: #d541a8;
   text-align: center;
   margin-top: 40px;
-  padding: 20px;
-  font-size: 2rem;
+  padding: 10px;
+  font-size: 8rem;
   font-weight: bold;
   margin-left: 350px;
   margin-right: 350px;
+  font-stretch: ultra-condensed;
+  text-overflow: ellipsis;
 }
 main div h4 {
-  background-color: rgba(239, 205, 248, 0.2117647059);
   color: #000000;
-  margin-left: 200px;
-  margin-right: 200px;
   text-align: center;
   margin-top: 10px;
-  font-size: 1.5rem;
-  padding: 20px;
-}
-main div .texto-inicio {
-  background-color: rgba(239, 205, 248, 0.2117647059);
-  font-size: 1.2rem;
-  line-height: 1.5;
-  padding: 20px;
-  margin: 20px;
-}
-
-main section h2 {
-  color: rgba(229, 142, 240, 0.7411764706);
-  text-align: center;
-  margin-top: 40px;
-  padding-bottom: 30px;
-  font-size: 2rem;
-  font-weight: bold;
-}
-main section p {
-  font-size: 1.2rem;
-  line-height: 1.5;
+  margin-bottom: 8rem;
+  font-size: 4rem;
   padding: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-main .maps {
-  text-align: center;
-  justify-content: center;
-}
-main .maps h2 {
-  color: rgba(229, 142, 240, 0.7411764706);
-  text-align: center;
-  margin-top: 40px;
-  padding-bottom: 30px;
-  font-size: 2rem;
   font-weight: bold;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-stretch: ultra-condensed;
+  text-overflow: ellipsis;
 }
-main .maps .map-container {
+main div h4 .highlight-raza {
+  color: #d541a8;
+  font-size: 4.5rem;
+}
+main .parrafo1 {
+  background-color: #f6d5fb;
+  width: 100%;
+  margin: 0;
+}
+main .parrafo1 .contenedor {
+  width: 85%;
+  margin: 0 auto;
   overflow: hidden;
-  display: inline-block;
-  text-align: center;
-  justify-content: center;
-}
-main .maps .map-container .map {
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-main .maps .map-container .map:hover {
-  transform: scale(1.2);
-}
-main .maps .ubicacion h2 {
-  color: rgba(229, 142, 240, 0.7411764706);
-  text-align: center;
-  margin-top: 40px;
-  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
   font-size: 2rem;
-  font-weight: bold;
 }
-main .maps .ubicacion p {
-  font-size: 1.2rem;
+main .parrafo1 .contenedor img {
+  float: left;
+  width: 300px;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 2px;
+}
+main .parrafo1 .contenedor img:hover {
+  border: solid 8px #d541a8;
+  padding: 0;
+}
+main .parrafo1 .contenedor p {
+  font-size: 2rem;
   line-height: 1.5;
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
+  flex: 1;
+  margin-bottom: 50px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+main .telefono {
   text-align: center;
   justify-content: center;
+}
+main .telefono h3 {
+  color: #d541a8;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-left: 350px;
+  margin-right: 350px;
+  font-stretch: ultra-condensed;
+  text-overflow: ellipsis;
+}
+main .telefono .info {
+  display: flex;
+  gap: 5px;
+  text-align: center;
+  margin-left: 350px;
+}
+main .telefono .info p {
+  color: #000000;
+  text-align: center;
+  font-size: 4rem;
+  padding: 10px;
+  font-weight: bold;
+  font-stretch: ultra-condensed;
+  text-overflow: ellipsis;
+}
+main .telefono .info p {
+  color: #000000;
+  text-align: center;
+  font-size: 4rem;
+  padding: 10px;
+  font-weight: bold;
+  font-stretch: ultra-condensed;
+  text-overflow: ellipsis;
+  justify-content: center;
+}
+main .parrafo {
+  background-color: #f6d5fb;
+  width: 100%;
+  margin: 0;
+}
+main .parrafo .contenedor {
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2rem;
+}
+main .parrafo .contenedor img {
+  float: left;
+  width: 300px;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 2px;
+}
+main .parrafo .contenedor img:hover {
+  border: solid 8px #d541a8;
+  padding: 0;
+}
+main .parrafo .contenedor p {
+  font-size: 2rem;
+  line-height: 1.5;
+  padding: 10px;
+  margin: 10px;
+  flex: 1;
+  margin-bottom: 50px;
+  font-weight: bold;
+  margin-top: 50px;
 }
 
-main div section h2 {
-  color: rgba(229, 142, 240, 0.7411764706);
+main .quienes {
+  margin-bottom: 80px;
+}
+main .quienes .somos {
+  color: #d541a8;
   text-align: center;
   margin-top: 40px;
   padding-bottom: 30px;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
 }
-main div section p {
-  font-size: 1.2rem;
-  line-height: 1.5;
+main .quienes p {
+  font-size: 2rem;
+  line-height: 1.7;
   padding: 10px;
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+main .rescate {
+  display: flex;
+  margin: 30px;
+  text-align: center;
+}
+main .rescate .content {
+  display: flex;
+  align-items: center;
+}
+main .rescate .content h3 {
+  margin: 0;
+  flex: 1;
+  font-size: 3rem;
+  margin-right: 30px;
+  color: #d541a8;
+  font-weight: bold;
+}
+main .rescate .content .rastreo {
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+main .rescate .content .rastreo p {
+  height: auto;
+  display: block;
+  margin-left: 20px;
+  border: solid 5px rgba(229, 142, 240, 0.7411764706);
+  padding: 20px;
+}
+main .veterinario {
+  margin: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+main .veterinario h3 {
+  font-size: 3rem;
+  color: #d541a8;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 30px;
+}
+main .veterinario p {
+  height: auto;
+  margin-left: 20px;
+  border: solid 5px rgba(229, 142, 240, 0.7411764706);
+  padding: 10px;
+}
+main .veterinario .vete {
+  display: flex;
+  justify-content: space-between;
+}
+main .veterinario .vete .vete-img {
+  flex: 1;
+}
+main .veterinario .vete .vete-img img {
+  width: 50vh;
+  height: auto;
+  display: block;
+  border: solid 5px rgba(229, 142, 240, 0.7411764706);
+  opacity: 0.3;
+}
+main .veterinario .vete .vete-img img:hover {
+  border: double 5px #d541a8;
+  opacity: 1;
+}
+main .transito {
+  display: flex;
+  margin: 30px;
+  text-align: center;
+}
+main .transito .content {
+  display: flex;
+  align-items: center;
+}
+main .transito .content h3 {
+  margin: 0;
+  flex: 1;
+  font-size: 3rem;
+  margin-right: 30px;
+  color: #d541a8;
+  font-weight: bold;
+}
+main .transito .content p {
+  height: auto;
+  display: block;
+  margin-left: 20px;
+  border: solid 5px rgba(229, 142, 240, 0.7411764706);
+  padding: 20px;
+}
+main .hogar {
+  display: flex;
+  margin: 30px;
+  text-align: center;
+}
+main .hogar .content {
+  display: flex;
+  align-items: center;
+}
+main .hogar .content h3 {
+  margin: 0;
+  flex: 1;
+  font-size: 3rem;
+  margin-right: 30px;
+  color: #d541a8;
+  font-weight: bold;
+}
+main .hogar .content p {
+  height: auto;
+  display: block;
+  margin-left: 20px;
+  border: solid 5px rgba(229, 142, 240, 0.7411764706);
+  padding: 20px;
+}
+main .encuentro {
+  height: auto;
+  display: block;
+  border: solid 5px rgba(229, 142, 240, 0.7411764706);
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
   margin: 20px;
 }
-main .perro h2 {
-  color: rgba(229, 142, 240, 0.7411764706);
+main .vete {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+main .vete .vete-img {
+  flex: 1;
+  margin: 30px;
+  text-align: center;
+  justify-content: center;
+}
+main .vete .vete-img img {
+  width: 50vh;
+  height: auto;
+  display: block;
+  border: solid 5px rgba(229, 142, 240, 0.7411764706);
+  opacity: 0.3;
+}
+main .vete .vete-img img:hover {
+  border: double 5px #d541a8;
+  opacity: 1;
+}
+main .casa {
+  margin: 30px;
+  text-align: center;
+  justify-content: center;
+}
+main .casa p {
+  height: auto;
+  display: block;
+  margin-left: 20px;
+  border: solid 5px rgba(229, 142, 240, 0.7411764706);
+  padding: 20px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+main {
+  /*
+   .section-4 {
+      padding: 2rem;
+      border-radius: 8px;
+      justify-content: center;
+      text-align: center;
+      .textoform {
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 1.5rem;
+      }
+      .row{
+          .form-label {
+              font-weight: bold;
+              margin-bottom: 1.5rem;
+              font-size: 1.5rem;
+          }
+          .form-control{
+              margin-bottom: 1.5rem;
+              font-size: 1.5rem;
+
+          }
+          }
+          .input-group {
+              margin-bottom: 0.5rem;
+
+              .input-group-text {
+                  background-color: $bg-rosita;
+              }
+          }
+          .btn-primary {
+              background-color: $bg-boton;
+              border: $bg-borde 2px solid;
+              color: $bg-negro;
+              margin: 10px;
+              margin-left: 60px;
+              font-size: 1.3rem;
+              &:hover {
+                  color: $bg-blanco;
+                  border: $bg-fucsia 2px solid;
+                  background-color: $bg-rosita;
+              }  
+          }
+          .form-check {
+              margin-bottom: 1rem;
+          }
+          .form-check-input {
+              margin-right: 0.5rem;
+          }
+          .col-13 {
+              display: flex;
+              justify-content: center;
+          }
+      }*/
+}
+main div .adop .adopciones {
+  color: #d541a8;
   text-align: center;
   margin-top: 40px;
   padding-bottom: 30px;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
+}
+main div .adop p {
+  font-size: 2rem;
+  line-height: 1.7;
+  padding: 10px;
+  margin: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+main .perro {
+  margin: 30px;
+}
+main .perro .perro1 {
+  margin: 0;
+  flex-shrink: 0;
+  font-size: 3rem;
+  margin-left: 50px;
+  margin-bottom: 40px;
 }
 main .perro .nombre-galgos {
   position: center;
@@ -189,11 +503,13 @@ main .perro .nombre-galgos {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 2rem;
-  background-color: #f997e2;
-  margin-left: 480px;
-  margin-bottom: 20px;
-  margin-top: 30px;
+  font-size: 5rem;
+  margin-left: 650px;
+  margin-top: 80px;
+  font-weight: bold;
+}
+main .perro .nombre-galgos:hover {
+  color: #d541a8;
 }
 main .perro .contenedor {
   width: 85%;
@@ -201,7 +517,6 @@ main .perro .contenedor {
   overflow: hidden;
   display: flex;
   align-items: center;
-  margin-top: 20px;
   padding-bottom: 20px;
 }
 main .perro .contenedor img {
@@ -216,141 +531,707 @@ main .perro .contenedor img:hover {
   padding: 0;
 }
 main .perro .contenedor p {
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 1.5;
   padding: 10px;
   margin: 20px;
   flex: 1;
   margin-bottom: 50px;
 }
-main .section-4 .textoform {
+main .section-4 {
   text-align: center;
-  font-size: 1.2rem;
+}
+main .section-4 .textoform {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  padding: 10px;
+  margin: 20px;
+  flex: 1;
+  margin-bottom: 50px;
+  color: #d541a8;
+}
+main .section-4 form div label {
+  font-size: 1.5rem;
+  margin: 10px;
   font-weight: bold;
 }
-main .section-4 .row .col-13 .btn {
-  background-color: rgba(218, 144, 228, 0.8588235294);
-  border: #f49eff 2px solid;
-  color: #000000;
+main .section-4 form div textarea {
+  width: 80%;
+  padding: 0.75rem;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  resize: vertical;
+  margin-bottom: 1rem;
+  text-align: center;
 }
-main .section-4 .row .col-13 .btn:hover {
-  color: white;
-  border: #d541a8 2px solid;
-  background-color: #f997e2;
-}
-main .section-4 .col-12 .btn {
+main .section-4 div .btn {
   background-color: rgba(218, 144, 228, 0.8588235294);
   border: #f49eff 2px solid;
   color: #000000;
   margin: 10px;
   margin-left: 60px;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
 }
-main .section-4 .col-12 .btn:hover {
+main .section-4 div .btn:hover {
   color: white;
   border: #d541a8 2px solid;
   background-color: #f997e2;
 }
 
-main h4 {
+main .productos {
+  color: #d541a8;
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  font-size: 4rem;
+  font-weight: bold;
+}
+main .compra {
   color: #000000;
   padding: 10px;
   text-align: center;
   margin-top: 30px;
-  font-size: 1rem;
-}
-main h2 {
-  color: rgba(229, 142, 240, 0.7411764706);
-  text-align: center;
-  margin-top: 40px;
-  padding-bottom: 30px;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
-main .carrusel {
-  text-align: center;
+main .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px;
   justify-content: center;
 }
-main .carrusel div .carousel-inner .carousel-item img {
-  margin: 0 auto;
-  max-width: 100%;
+main .galeria .galeria-item {
+  width: 25%;
+  box-sizing: border-box;
+  position: relative;
+}
+main .galeria .galeria-item img {
+  width: 100%;
   height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+main .galeria .galeria-item img:hover {
+  transform: scale(1.05);
+}
+main .galeria .galeria-item .nombre-producto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f997e2 0, 0, 0, 0.5;
+  color: #d541a8;
+  text-align: left;
+  padding: 5px;
+  border-radius: 0 0 8px 8px;
+  font-size: 4rem;
+  font-weight: bold;
+  font-stretch: ultra-condensed;
+  text-overflow: ellipsis;
+}
+main .galeria .galeria-item .nombre-producto:hover {
+  font-size: 5rem;
+  color: #000000;
+}
+main .pedir {
+  margin: 30px;
+}
+main .pedir h4 {
+  color: #000000;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+main .pedir p {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+main .pedir a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: bold;
   text-align: center;
   justify-content: center;
+  margin-left: 550px;
 }
-main h2 {
-  color: rgba(229, 142, 240, 0.7411764706);
+main .pedir a:hover {
+  font-size: 2.7rem;
+  color: #d541a8;
+}
+
+main section h2 {
+  color: #d541a8;
   text-align: center;
   margin-top: 40px;
   padding-bottom: 30px;
+  font-size: 4rem;
+  font-weight: bold;
+}
+main section p {
   font-size: 2rem;
+  line-height: 1.7;
+  padding: 10px;
+  margin: 5px;
   font-weight: bold;
+  text-align: center;
 }
-main div {
-  margin: 40px;
-}
-main div .coment {
-  font-weight: bold;
-  font-size: 1.2rem;
+main section p {
+  font-size: 2rem;
+  line-height: 1.7;
   padding: 10px;
   margin: 20px;
+  font-weight: bold;
 }
-main .col-12 .btn {
+main .mp {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+main .mp .card {
+  flex: 1 1 14rem;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+main .mp .card:hover {
+  border: solid #d541a8;
+  padding: 0;
+}
+main .mp .card .card-img-top {
+  padding: 5px;
+}
+main .mp .card .card-body .card-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgba(229, 142, 240, 0.7411764706);
+}
+main .mp .card .card-body .card-text {
+  text-align: justify;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0;
+}
+main .mp .card .card-body .btn {
   background-color: rgba(218, 144, 228, 0.8588235294);
   border: #f49eff 2px solid;
   color: #000000;
   margin: 10px;
-  margin-left: 30px;
+  margin-left: 20px;
+  width: 100px;
+  font-size: 1.5rem;
 }
-main .col-12 .btn:hover {
+main .mp .card .card-body .btn:hover {
   color: white;
   border: #d541a8 2px solid;
   background-color: #f997e2;
-}
-main p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  padding: 10px;
-  margin: 10px;
-  margin-left: 30px;
-}
-
-main section h2 {
-  color: rgba(229, 142, 240, 0.7411764706);
-  text-align: center;
-  margin-top: 40px;
-  padding-bottom: 30px;
-  font-size: 2rem;
   font-weight: bold;
-}
-main section p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  padding: 10px;
-  margin: 20px;
+  font-size: 1.7rem;
 }
 main .cbu p {
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 1.5;
   padding: 10px;
   margin: 20px;
   text-align: center;
   padding: 30px;
+  font-weight: bold;
 }
 
 footer {
-  padding: 5px;
-  margin-top: 10px;
-  background: radial-gradient(circle, #f6d5fb, #efbaf6, #f2b9fa);
+  background: radial-gradient(circle, #f6d5fb, #efbaf6, #f997e2);
+  color: #000000;
+  padding: 20px;
   text-align: center;
 }
-footer .footer-text h6 {
-  display: inline-block;
+footer .footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px;
+}
+footer .footer-icons a {
   color: #000000;
-  padding: 10px;
-  margin-top: 10px;
-  padding-bottom: 15px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
+}
+footer .footer-icons a:hover {
+  color: #d541a8;
+}
+
+@media only screen and (max-width: 1200px) {
+  header.header .navbar h1 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header.header .navbar .collapse ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header.header .navbar .collapse ul li {
+    margin: 0.5rem 0;
+  }
+  .main .subtitulo {
+    font-size: 1.5rem;
+  }
+  .parrafo1 .contenedor {
+    flex-direction: column;
+  }
+  .parrafo1 .contenedor img {
+    width: 100%;
+  }
+  .info p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header.header .navbar .collapse ul li {
+    font-size: 0.9rem;
+  }
+  main.main .subtitulo {
+    font-size: 1.2rem;
+  }
+  main.main .highlight-raza {
+    font-size: 0.9rem;
+  }
+  .info p {
+    font-size: 0.9rem;
+  }
+  footer .footer-icons a {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  header.header .navbar .navbar-brand img.logo {
+    max-width: 120px;
+  }
+  header.header .navbar h1 {
+    font-size: 1.5rem;
+  }
+  main.main div .subtitulo {
+    font-size: 4rem;
+    text-align: center;
+    margin-left: 150px;
+    margin: 0;
+  }
+  main.main div .sub1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  main.main div .highlight-raza {
+    font-size: 1.8rem;
+  }
+  main.main .telefono {
+    text-align: center;
+    justify-content: center;
+  }
+  main.main .telefono h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+  }
+  main.main .telefono .info {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+  }
+  main.main .telefono .info p {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  footer .footer-icons a {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header.header .navbar h1 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header.header .navbar .collapse ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header.header .navbar .collapse ul li {
+    margin: 0.5rem 0;
+  }
+  main .quienes-somos h2 {
+    font-size: 1.5rem;
+  }
+  main section .content h3 {
+    font-size: 1.3rem;
+  }
+  main section .content p {
+    font-size: 0.9rem;
+  }
+  main .casa2 p {
+    font-size: 0.9rem;
+  }
+  footer .footer-icons a {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header.header .navbar .collapse ul li {
+    font-size: 0.9rem;
+  }
+  main .quienes-somos h2 {
+    font-size: 1.2rem;
+  }
+  main .quienes-somos p {
+    font-size: 0.9rem;
+  }
+  main section .content h3 {
+    font-size: 1.2rem;
+  }
+  main section .content p {
+    font-size: 0.8rem;
+  }
+  main section .vete {
+    flex-direction: column;
+  }
+  main section .vete .vete-img {
+    margin-bottom: 1rem;
+  }
+  main .casa2 p {
+    font-size: 0.8rem;
+  }
+  footer .footer-icons a {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  header.header .navbar .navbar-brand img.logo {
+    max-width: 120px;
+  }
+  header.header .navbar h1 {
+    font-size: 1.5rem;
+  }
+  main .quienes .somos {
+    font-size: 3rem;
+    margin: 0;
+  }
+  main .quienes p {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  main .rescate .content {
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+  }
+  main .rescate .content h3 {
+    font-size: 2.5rem;
+    margin: 20px;
+  }
+  main .rescate .content .rastreo {
+    margin: 0;
+    margin-right: 20px;
+  }
+  main .rescate .content .rastreo p {
+    font-size: 1.2rem;
+  }
+  main .veterinario {
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+  }
+  main .veterinario h3 {
+    font-size: 2.5rem;
+    margin: 20px;
+  }
+  main .veterinario p {
+    font-size: 1.2rem;
+  }
+  main .veterinario .vete .vete-img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  main .transito {
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+  }
+  main .transito .content {
+    display: inline-block;
+  }
+  main .transito .content h3 {
+    font-size: 2.5rem;
+    margin: 20px;
+  }
+  main .transito .content p {
+    font-size: 1.5rem;
+  }
+  main .hogar {
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+  }
+  main .hogar .content {
+    display: inline-block;
+  }
+  main .hogar .content h3 {
+    font-size: 2.5rem;
+    margin: 20px;
+  }
+  main .hogar .content p {
+    font-size: 1.5rem;
+  }
+  main .vete {
+    text-align: center;
+    display: inline-block;
+  }
+  main .vete .vete-img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  main .casa2 p {
+    font-size: 1.5rem;
+  }
+  footer {
+    font-size: 2rem;
+  }
+  footer .footer-icons {
+    font-size: 2rem;
+  }
+  footer .footer-icons a {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header.header .navbar h1 {
+    font-size: 1.8rem;
+  }
+  main .perro h2 {
+    font-size: 1.6rem;
+  }
+  main .perro .nombre-galgos {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header.header .navbar .collapse ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header.header .navbar .collapse ul li {
+    margin: 0.5rem 0;
+  }
+  main .perro h2 {
+    font-size: 1.5rem;
+  }
+  main .perro .nombre-galgos {
+    font-size: 1.2rem;
+  }
+  main .section-4 .textoform {
+    font-size: 1.1rem;
+  }
+  footer .footer-icons a {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header.header .navbar .collapse ul li {
+    font-size: 0.9rem;
+  }
+  main .perro h2 {
+    font-size: 1.4rem;
+  }
+  main .perro .nombre-galgos {
+    font-size: 1.1rem;
+  }
+  main .section-4 .textoform {
+    font-size: 1rem;
+  }
+  main .section-4 form .form-control {
+    font-size: 0.9rem;
+  }
+  main .section-4 form .btn-primary {
+    font-size: 0.9rem;
+  }
+  footer .footer-icons a {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  header.header .navbar .navbar-brand img.logo {
+    max-width: 120px;
+  }
+  header.header .navbar h1 {
+    font-size: 1.5rem;
+  }
+  main div .adop .adopciones {
+    font-size: 4rem;
+    margin: 0;
+  }
+  main div .adop p {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  main .perro {
+    display: inline-block;
+    margin: 0;
+  }
+  main .perro .perro1 {
+    font-size: 3rem;
+    margin: 30px;
+  }
+  main .perro .nombre-galgos {
+    margin-top: 30px;
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+    margin-left: 250px;
+  }
+  main .perro .contenedor {
+    margin-left: 25px;
+    display: inline-block;
+  }
+  main .perro .contenedor p {
+    font-size: 2rem;
+  }
+  main .section-4 {
+    margin: 0;
+  }
+  main .section-4 .textoform {
+    font-size: 1.5rem;
+  }
+  main .section-4 form {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+  }
+  main .section-4 form .form-control {
+    font-size: 0.5rem;
+  }
+  main .section-4 form .btn-primary {
+    font-size: 1.5rem;
+  }
+  main .section-4 form div textarea {
+    width: 400px;
+  }
+  main .section-4 div .btn {
+    font-size: 1.5rem;
+  }
+  footer .footer-icons a {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .galeria-item {
+    width: calc(25% - 16px);
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  main .productos {
+    font-size: 3.5rem;
+    margin: 0;
+    text-align: center;
+  }
+  main .compra {
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
+  }
+  main .galeria .galeria-item {
+    width: calc(33.33% - 16px);
+  }
+  main .galeria .galeria-item .nombre-producto {
+    font-size: 3.8rem;
+  }
+  main .galeria .galeria-item .nombre-producto:hover {
+    font-size: 4rem;
+  }
+  main h4 {
+    margin: 0;
+    text-align: center;
+  }
+  main p {
+    margin: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  main .productos {
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+  }
+  main .compra {
+    font-size: 2.2rem;
+    margin: 0;
+    text-align: center;
+  }
+  main .galeria .galeria-item {
+    width: calc(50% - 16px);
+  }
+  main .galeria .galeria-item .nombre-producto {
+    font-size: 3.5rem;
+  }
+  main .galeria .galeria-item .nombre-producto:hover {
+    font-size: 3.6rem;
+  }
+  main h4 {
+    margin: 0;
+    text-align: center;
+  }
+  main p {
+    margin: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .productos {
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+  }
+  main .compra {
+    font-size: 2.2rem;
+    margin: 0;
+    text-align: center;
+  }
+  main .galeria .galeria-item {
+    width: 100%;
+    gap: 20px;
+    margin: 30px;
+  }
+  main .galeria .galeria-item .nombre-producto {
+    font-size: 3rem;
+  }
+  main .galeria .galeria-item .nombre-producto:hover {
+    font-size: 3.1rem;
+  }
+  main .pedir {
+    margin: 30px;
+  }
+  main .pedir h4 {
+    margin: 0;
+    text-align: center;
+  }
+  main .pedir p {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+  }
+  main .pedir a {
+    margin-left: 100px;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

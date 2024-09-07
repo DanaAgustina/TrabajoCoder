@@ -1,35 +1,149 @@
 
 main{
+    margin-top: 180px;
     div{
         h2{
-            background-color: $bg-transparente;
-            color:$bg-rosa;
+            color:$bg-fucsia;
             text-align: center;
             margin-top: 40px;
-            padding: 30px;
-            font-size: 2rem;
+            padding: 10px;
+            font-size: 8rem;
             font-weight: bold;
             margin-left: 350px;
-            margin-right: 350px; 
+            margin-right: 350px;
+            font-stretch: ultra-condensed;
+            text-overflow: ellipsis;
         }
         h4{
-            background-color: $bg-transparente;
             color: $bg-negro;
-            margin-left: 200px;
-            margin-right: 200px;
             text-align: center;
             margin-top: 10px;
-            font-size: 1.5rem;
-            padding: 30px;
-            
+            margin-bottom: 8rem;
+            font-size: 4rem;
+            padding: 10px;
+            font-weight: bold;
+            margin-left: 300px;
+            margin-right: 300px;
+            font-stretch: ultra-condensed;
+            text-overflow: ellipsis; 
+            .highlight-raza{
+                color: $bg-fucsia;
+                font-size: 4.5rem;
+            }
+        } 
+    }    
+    .parrafo1{
+        background-color: $bg-blanquito;
+        width: 100%;
+        margin: 0;
+        .contenedor{
+            width: 85%; 
+            margin: 0 auto; 
+            overflow: hidden; 
+            display: flex; 
+            align-items: center; 
+            margin-top: 20px;
+            padding-bottom: 20px;
+            font-size: 2rem;               
+            img{
+                float: left; 
+                width: 300px;
+                padding: 30px;
+                margin: 20px;
+                border-radius: 2px;
+                &:hover{
+                    border: solid 8px $bg-fucsia;
+                    padding: 0;
+                }
+            }
+            p{
+                font-size: 2rem;
+                line-height: 1.5;
+                padding: 10px;
+                margin: 10px;
+                flex: 1;  
+                margin-bottom: 50px;
+                font-weight: bold;
+                margin-top: 50px;
+            }
+        }       
+    } 
+    .telefono{
+        text-align: center;
+        justify-content: center;
+        h3{
+            color:$bg-fucsia;
+            text-align: center;
+            margin-top: 60px;
+            font-size: 5rem;
+            font-weight: bold;
+            margin-left: 350px;
+            margin-right: 350px;
+            font-stretch: ultra-condensed;
+            text-overflow: ellipsis;
         }
-        .texto-inicio{
-            background-color: $bg-transparente;
-            font-size: 1.2rem;
-            line-height: 1.5;
-            padding: 20px;
-            margin: 20px;
-        }
+        .info{
+            display: flex;
+            gap: 5px;
+            text-align: center;
+            margin-left: 350px;
+            p{
+                color: $bg-negro;
+                text-align: center;
+                font-size: 4rem;
+                padding: 10px;
+                font-weight: bold;
+                font-stretch: ultra-condensed;
+                text-overflow: ellipsis;                
+            }
+            p{
+                color: $bg-negro;
+                text-align: center;
+                font-size: 4rem;
+                padding: 10px;
+                font-weight: bold;
+                font-stretch: ultra-condensed;
+                text-overflow: ellipsis;
+                justify-content: center;     
+            }
 
+        }
+        
     }
-}
+    .parrafo{
+        background-color: $bg-blanquito;
+        width: 100%;
+        margin: 0;
+        .contenedor{
+            width: 85%; 
+            margin: 0 auto; 
+            overflow: hidden; 
+            display: flex; 
+            align-items: center; 
+            margin-top: 20px;
+            padding-bottom: 20px;
+            font-size: 2rem;               
+            img{
+                float: left; 
+                width: 300px;
+                padding: 30px;
+                margin: 20px;
+                border-radius: 2px;
+                &:hover{
+                    border: solid 8px $bg-fucsia;
+                    padding: 0;
+                }
+            }
+            p{
+                font-size: 2rem;
+                line-height: 1.5;
+                padding: 10px;
+                margin: 10px;
+                flex: 1;  
+                margin-bottom: 50px;
+                font-weight: bold;
+                margin-top: 50px;
+            }
+        }       
+    } 
+}       

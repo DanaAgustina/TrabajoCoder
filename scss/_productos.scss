@@ -1,80 +1,89 @@
 
 main{
-    h4{
+    .productos{
+        color:$bg-fucsia;
+        text-align: center;
+        margin-top: 40px;
+        padding-bottom: 30px;
+        font-size: 4rem;
+        font-weight: bold; 
+    }
+    .compra{
         color: $bg-negro;
         padding: 10px;
         text-align: center;
         margin-top: 30px;
-        font-size: 1rem;
-
-    }
-    h2{
-        color:$bg-rosa;
-        text-align: center;
-        margin-top: 40px;
-        padding-bottom: 30px;
-        font-size: 2rem;
+        font-size: 2.5rem; 
         font-weight: bold; 
-
     }
-    .carrusel{
-        text-align: center;
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;  
+        margin: 30px;
         justify-content: center;
-        div{
-            .carousel-inner{
-                .carousel-item{
-                    img{
-                        margin: 0 auto;
-                        max-width: 100%;
-                        height: auto;
-                        text-align: center;
-                        justify-content: center;                                               
-                    }   
+        .galeria-item {
+            width: 25%;
+            box-sizing: border-box;
+            position: relative;
+            img {
+                width: 100%;
+                height: auto; 
+                display: block; 
+                border-radius: 8px; 
+                transition: transform 0.3s ease-in-out; 
+                &:hover {
+                    transform: scale(1.05);
                 }
-                
-            }  
+            }
+            .nombre-producto {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: $bg-rosita(0, 0, 0, 0.5); 
+                color: $bg-fucsia; 
+                text-align: left;
+                padding: 5px;
+                border-radius: 0 0 8px 8px; 
+                font-size: 4rem;
+                font-weight: bold; 
+                font-stretch: ultra-condensed;
+                text-overflow: ellipsis;
+                &:hover{
+                    font-size: 5rem; 
+                    color: $bg-negro;
+                }
+            }
         }
-
-    }
-    h2{
-        color:$bg-rosa;
-        text-align: center;
-        margin-top: 40px;
-        padding-bottom: 30px;
-        font-size: 2rem;
-        font-weight: bold; 
-
-    }
-    div{
-        margin: 40px;
-        .coment{
+    } 
+    .pedir{
+        margin: 30px;
+        h4{
+            color: $bg-negro;
+            text-align: center;
+            font-size: 2.5rem; 
             font-weight: bold; 
-            font-size: 1.2rem;
-            padding: 10px;
-            margin: 20px;
-        }
-
+            margin: 0;
+        } 
+        p{
+            font-size: 2rem;
+            text-align: center;
+            font-weight: bold;
+        }     
+        a{
+            text-decoration: none;
+            color: $bg-negro;
+            font-size: 2.5rem; 
+            font-weight: bold; 
+            text-align: center;
+            justify-content: center;
+            margin-left: 550px;
+            &:hover{
+                font-size: 2.7rem; 
+                color: $bg-fucsia;
+            }
+        } 
     }
-    .col-12{
-        .btn{
-             background-color: $bg-boton;
-             border: $bg-borde 2px solid;
-             color: $bg-negro; 
-             margin: 10px;
-             margin-left: 30px;      
-             &:hover{
-                 color:$bg-blanco; 
-                 border:$bg-fucsia 2px solid;
-                 background-color:$bg-rosita;
-                }
-        }
-    }
-    p{
-        font-size: 1.2rem;
-        line-height: 1.5;
-        padding: 10px;
-        margin: 10px;
-        margin-left: 30px;
-
-    }
+ 
 }

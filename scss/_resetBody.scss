@@ -4,14 +4,14 @@
     box-sizing: border-box;
  }
 @font-face {
-    font-family: Poppins-Light;
-    src: url(../Font/Poppins/Poppins-Light.ttf);
+    font-family: AmaticSC-Regular;
+    src: url(../Font/Amatic_SC/AmaticSC-Regular.ttf);
 }   
 body{
    background-color: $bg-claro;
-    font-family:"Poppins-Light";
+    font-family:"AmaticSC-Regular";
     .background-video{
-      width: 100w;
+      width: 100%;
       height: 100vh;
       object-fit: cover;
       position: fixed;

@@ -1,51 +1,68 @@
 .header{
-    background: radial-gradient(circle, $bg-blanquito , $bg-medioclaro, $bg-clarito );
+    background: radial-gradient(circle, $bg-blanquito , $bg-medioclaro, $bg-rosita );
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 10px 0; 
+    z-index: 1; 
+    transition: background-color $bg-transparente 0.3s; 
+    margin: 0; 
+    &.transparent {
+        background-color: $bg-transparente; 
+    }
     .navbar{
         list-style-type: none;
-        margin-top: 5px;
+        margin-top: 0px;
         .container-fluid{
             .navbar-brand{
                 .logo{
-                  width: 100px;
+                  width: 80px;
                   margin-top:20px;
                   padding: 5px;
-                  border: solid 3px $bg-rosa;
-                  margin: 10px;
+                  border: double 3px $bg-fucsia;
+                  margin: 5px;
                   &:hover{
                     transform: scale(1.1, 1.1);
                     padding: 0;
-                    border: solid 3px $bg-rosita;
+                    border: solid 3px $bg-fucsia;
                   }
                 }
-                h1{
-                  color: $bg-negro;
-                  text-align: center;
-                  font-size: 2.8rem;
-                  margin-top: 20px;
-                  font-family: bold; 
-                }
+            }    
+            h1{
+                color: $bg-negro;
+                text-align: center;
+                font-size: 2.5rem;
+                margin-top: 10px;
+                font-weight: bold; 
             }
+            
         }
         .collapse{
+            text-align: right;
+            justify-content: right;
             ul{
+                list-style: none; 
+                margin: 0;
+                padding: 0;
+                display: flex; 
+                justify-content: center; 
                 li{
-                  margin: 5px;
+                  margin: 0 10px;
                   display: inline-block;
                   text-align: center;
                   a{
                      color:$bg-negro;
-                     font-size: 1rem;
-                     font-weight: bold;
+                     font-size: 1.8rem;
                      text-decoration: none;
-                     border: $bg-rosa 2px solid;
-                     padding: 5px;
+                     padding: 10px;
                      text-align:center;
                      display: inline-block;
-                     margin-left: 10px; 
+                     margin-left: 20px; 
                      &:hover{
-                         color:$bg-blanco; 
-                         border:$bg-fucsia 2px  solid;
-                         background: linear-gradient( to top,$bg-fucsia , $bg-rosa, $bg-rosita, $bg-medioclaro, $bg-blanco ) ;
+                         color:$bg-fucsia;
+                         transform: scale(1.3);
+                         font-weight: bold; 
                         }
                     } 
                 }

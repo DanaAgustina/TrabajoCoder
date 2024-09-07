@@ -1,23 +1,185 @@
 main{
-    section{
-        h2{
-            color:$bg-rosa;
+
+    .quienes{
+        margin-bottom: 80px;
+        .somos{
+            color:$bg-fucsia;
             text-align: center;
             margin-top: 40px;
             padding-bottom: 30px;
-            font-size: 2rem;
-            font-weight: bold; 
-
+            font-size: 4rem;
+            font-weight: bold;  
         }
         p{
-            font-size: 1.2rem;
-            line-height: 1.5;
+            font-size: 2rem;
+            line-height: 1.7;
             padding: 10px;
-            margin-right: 20px;
+            margin: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+    } 
+    .rescate {
+        display: flex;
+        margin: 30px;
+        text-align: center;
+        .content {
+            display: flex;
+            align-items: center; 
+            h3 {
+                margin: 0;
+                flex: 1; 
+                font-size: 3rem;
+                margin-right: 30px;
+                color: $bg-fucsia;
+                font-weight: bold;
+            }
+            .rastreo {
+                margin-left: 20px;
+                flex-shrink: 0; 
+                p {
+                    height: auto; 
+                    display: block;
+                    margin-left: 20px;
+                    border: solid 5px $bg-rosa;
+                    padding: 20px;
+                }
+            }
+        }
+        
+    }
+    .veterinario{
+        margin: 30px;
+        text-align: center; 
+        margin-bottom: 40px;
+        h3{
+            font-size: 3rem;
+            color: $bg-fucsia;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 30px;  
+        }
+        p{
+            height: auto; 
             margin-left: 20px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-
+            border: solid 5px $bg-rosa;
+            padding: 10px;
+        }
+        .vete{
+            display: flex; 
+            justify-content: space-between;
+            .vete-img{
+                flex: 1;
+                img{
+                    width: 50vh;    
+                    height: auto; 
+                    display: block;
+                    border: solid 5px $bg-rosa;
+                    opacity: .3;
+                    &:hover{
+                        border: double 5px $bg-fucsia;
+                        opacity: 1;
+                    }
+                }
+            }      
         }
     }
-}
+    .transito{
+        display: flex;
+        margin: 30px;
+        text-align: center;
+        .content {
+            display: flex;
+            align-items: center; 
+            h3 {
+                margin: 0;
+                flex: 1; 
+                font-size: 3rem;
+                margin-right: 30px;
+                color: $bg-fucsia;
+                font-weight: bold;
+            } 
+            p {
+                height: auto; 
+                display: block;
+                margin-left: 20px;
+                border: solid 5px $bg-rosa;
+                padding: 20px;
+            }
+        }
+    }
+    .hogar{
+        display: flex;
+        margin: 30px;
+        text-align: center;
+        .content {
+            display: flex;
+            align-items: center; 
+            h3 {
+                margin: 0;
+                flex: 1; 
+                font-size: 3rem;
+                margin-right: 30px;
+                color: $bg-fucsia;
+                font-weight: bold;
+            } 
+            p {
+                height: auto; 
+                display: block;
+                margin-left: 20px;
+                border: solid 5px $bg-rosa;
+                padding: 20px;
+            }
+        }
+    }
+    .encuentro{
+        height: auto; 
+        display: block;
+        border: solid 5px $bg-rosa;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+        margin: 20px;
+    }
+    .vete{
+        display: flex; 
+        justify-content: space-between;
+        margin: 20px;
+        .vete-img{
+            flex: 1;
+            margin: 30px;
+            text-align: center;
+            justify-content: center;
+            img{
+                width: 50vh;    
+                height: auto; 
+                display: block;
+                border: solid 5px $bg-rosa;
+                opacity: .3;
+                &:hover{
+                    border: double 5px $bg-fucsia;
+                    opacity: 1;
+                }
+            }
+        } 
+
+    } 
+    .casa{
+        margin: 30px;
+        text-align: center;
+        justify-content: center;
+
+        p {
+            height: auto; 
+            display: block;
+            margin-left: 20px;
+            border: solid 5px $bg-rosa;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+    } 
+}     
+
+    
